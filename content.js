@@ -174,11 +174,10 @@ window.SITE = {
 
   // Newest first.
   events: [
+    { year: "2026", text: L("SFSCON, Bolzano", "SFSCON, Bozen", "SFSCON, Bolzano") },
     { year: "2025", text: L("Industrial AI Challenge, as a mentor", "Industrial AI Challenge, als Mentor", "Industrial AI Challenge, come mentor") },
     { year: "2025", text: L("data2day, Karlsruhe", "data2day, Karlsruhe", "data2day, Karlsruhe") },
-    { year: "2024", text: L("WeAreDevelopers World Congress", "WeAreDevelopers World Congress", "WeAreDevelopers World Congress") },
-    { year: "2023", text: L("data2day, Karlsruhe", "data2day, Karlsruhe", "data2day, Karlsruhe") },
-    { year: "2023", text: L("Smart City Tag, Merano", "Smart City Tag, Meran", "Smart City Tag, Merano") },
+    { year: "2024", text: L("WeAreDevelopers World Congress, Berlin", "WeAreDevelopers World Congress, Berlin", "WeAreDevelopers World Congress, Berlino") },
     { year: "2022", text: L("World Summit AI, Amsterdam", "World Summit AI, Amsterdam", "World Summit AI, Amsterdam") },
     { year: "2022", text: L("Open Data Hub Day, Bolzano", "Open Data Hub Day, Bozen", "Open Data Hub Day, Bolzano") },
     { year: "2022", text: L("Design Thinking Workshop", "Design-Thinking-Workshop", "Workshop di Design Thinking") },
