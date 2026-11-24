@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Plaikner · Data Scientist</title>
+  <meta name="description" content="Daniel Plaikner, data scientist in the Konverto LAB department at KONVERTO, Bolzano. Databricks, Azure, Apache Spark, Python, LLM agents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230c0b12'/><text x='5' y='22' font-family='monospace' font-size='16' fill='%23b794f6'>dp</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing">
+  <canvas id="bg" class="bg" aria-hidden="true"></canvas>
+  <nav class="topnav" aria-label="Sections">
+    <div class="topnav-in">
+      <a class="brand mono" href="#top"><span>&gt;</span> daniel</a>
+      <div id="nav-links" class="nav-links"></div>
+      <div id="lang" class="lang mono" role="group" aria-label="Language"></div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="ring"><img class="avatar" src="photo.jpg" alt="Daniel Plaikner" width="148" height="148"></div>
+      <div class="who">
+        <h1 id="name"></h1>
+        <p id="role" class="role"></p>
+        <dl id="facts" class="facts mono"></dl>
+        <div class="actions">
+          <a id="cv-btn" class="cta" download><span id="cv-label"></span><span class="go" aria-hidden="true">↓</span></a>
+          <span id="social" class="social mono"></span>
+        </div>
+      </div>
+    </header>
+    <button id="expand" class="expand" type="button" aria-controls="sections"><span id="expand-label"></span><span class="go" aria-hidden="true">↓</span></button>
+
+    <div id="sections" tabindex="-1"></div>
+
+    <footer class="colophon mono">© <span id="year"></span> Daniel Plaikner. <span id="rights"></span></footer>
+  </main>
+
+  <noscript><p style="padding:24px">This page needs JavaScript. The CV is available as PDF: <a href="cv/Daniel-Plaikner-CV-en.pdf">English</a>, <a href="cv/Daniel-Plaikner-CV-de.pdf">Deutsch</a>, <a href="cv/Daniel-Plaikner-CV-it.pdf">Italiano</a>.</p></noscript>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+  <script src="bg.js"></script>
+</body>
+</html>
