@@ -13,7 +13,7 @@ window.SITE = {
   // Leave a value empty ("") to hide it on both the page and the CV.
   links: {
     github: "https://github.com/Daniel-Plaikner",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/daniel-plaikner-304633182/",
     email: "",
     phone: "",
   },

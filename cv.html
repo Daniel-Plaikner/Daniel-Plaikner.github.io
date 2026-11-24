@@ -70,7 +70,7 @@
       const row = (value, href) => (value ? `<div>${href ? `<a href="${href}">${value}</a>` : value}</div>` : "");
 
       document.getElementById("side").innerHTML = `
-        <div class="photo"><img src="photo.jpg" alt=""></div>
+        <div class="photo"><img src="photo-cv.jpg" alt=""></div>
         <section class="contact"><h2>${t(U.contact)}</h2>
           ${row(t(S.location))}
           ${row(S.links.email, `mailto:${S.links.email}`)}

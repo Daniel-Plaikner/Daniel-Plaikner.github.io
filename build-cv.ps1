@@ -1,5 +1,5 @@
 # Prints cv.html to cv/Daniel-Plaikner-CV-<lang>.pdf for en, de and it with headless Chrome (or Edge).
-# Run it after every change to content.js, cv.html or photo.jpg.
+# Run it after every change to content.js, cv.html or photo-cv.jpg (the page itself uses photo.jpg).
 
 $browser = @(
   "$env:ProgramFiles\Google\Chrome\Application\chrome.exe",
