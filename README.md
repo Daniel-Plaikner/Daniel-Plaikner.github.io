@@ -16,6 +16,7 @@ No build step and no dependencies: plain HTML, CSS and JavaScript, served by Git
 | `content.js` | All text in the three languages. Both pages read from it. |
 | `index.html`, `app.js`, `style.css`, `bg.js` | The profile page and its animated background. |
 | `cv.html` | The CV as an A4 one-pager (`cv.html?lang=en`, `de` or `it`). |
+| `fonts/` | Inter and JetBrains Mono (SIL Open Font License), served from here instead of Google Fonts. |
 | `build-cv.ps1` | Prints `cv.html` to the PDFs in `cv/` with headless Chrome or Edge. |
 
 ## Updating the content

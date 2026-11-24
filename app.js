@@ -74,20 +74,12 @@
     render();
   });
 
-  // Theme: the button stores a choice; without one the page keeps following the system setting.
-  const setTheme = theme => {
-    document.documentElement.dataset.theme = theme;
-    dispatchEvent(new Event("themechange")); // bg.js re-reads its colours
-  };
+  // Theme: dark by default, the button switches and remembers the choice.
   $("theme").addEventListener("click", () => {
     const theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = theme;
     try { localStorage.setItem("theme", theme); } catch (err) {}
-    setTheme(theme);
-  });
-  matchMedia("(prefers-color-scheme: light)").addEventListener("change", e => {
-    let stored;
-    try { stored = localStorage.getItem("theme"); } catch (err) {}
-    if (!stored) setTheme(e.matches ? "light" : "dark");
+    dispatchEvent(new Event("themechange")); // bg.js re-reads its colours
   });
 
   // Landing: only the card until "Show full profile" is pressed. A link to a section (#experience) skips it.

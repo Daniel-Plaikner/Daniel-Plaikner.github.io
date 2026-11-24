@@ -14,7 +14,7 @@ window.SITE = {
   links: {
     github: "https://github.com/Daniel-Plaikner",
     linkedin: "https://www.linkedin.com/in/daniel-plaikner-304633182/",
-    email: "",
+    email: "plaikner.daniel@gmail.com",
     phone: "",
   },
 
@@ -151,18 +151,18 @@ window.SITE = {
     {
       title: "Microsoft Certified: Azure Data Scientist Associate (DP-100)",
       org: "Microsoft",
-      when: L("Mar 2023 – Mar 2026", "März 2023 – März 2026", "mar 2023 – mar 2026"),
+      when: L("Mar 2023 – Mar 2027", "März 2023 – März 2027", "mar 2023 – mar 2027"),
       url: "https://learn.microsoft.com/api/credentials/share/en-us/Daniel-5186/20C1834F9A0D4DD?sharingId=BFF212D3D5CD4CFB",
     },
     {
       title: "Monitoring and Optimizing Apache Spark Workloads on Databricks",
       org: L("Databricks training", "Databricks-Schulung", "Corso Databricks"),
-      when: "",
+      when: "2026",
     },
     {
       title: "Stream Processing and Analysis with Apache Spark",
       org: L("Databricks training", "Databricks-Schulung", "Corso Databricks"),
-      when: "",
+      when: "2026",
     },
     {
       title: L("Italian B2", "Italienisch B2", "Italiano B2"),

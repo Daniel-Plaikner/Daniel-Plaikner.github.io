@@ -1,4 +1,9 @@
+/* Fonts are served from this repo (latin subset, variable weight), not from Google. */
+@font-face { font-family: Inter; src: url(fonts/inter.woff2) format("woff2"); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono.woff2) format("woff2"); font-weight: 400 700; font-display: swap; }
+
 :root {
+  color-scheme: dark; /* scrollbars and browser controls follow the theme */
   --bg: #0c0b12;
   --panel: #12111b;
   --card: #151422;
@@ -13,8 +18,9 @@
   --radius: 12px;
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
-/* data-theme is set in index.html: the visitor's stored choice, else the system setting */
+/* data-theme is set in index.html: dark unless the visitor chose light */
 :root[data-theme="light"] {
+  color-scheme: light;
   --bg: #f6f5fa;
   --panel: #eeecf5;
   --card: #ffffff;
