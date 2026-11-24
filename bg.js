@@ -6,13 +6,17 @@
   const LINK = 150; // px: nodes closer than this are connected
   let w, h, nodes = [], colors = [];
 
+  function readColors() {
+    const css = getComputedStyle(document.documentElement);
+    colors = ["--accent", "--accent-2", "--accent-3"].map(v => css.getPropertyValue(v).trim());
+  }
+
   function resize() {
     const dpr = Math.min(devicePixelRatio || 1, 2);
     w = innerWidth; h = innerHeight;
     canvas.width = w * dpr; canvas.height = h * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const css = getComputedStyle(document.documentElement);
-    colors = ["--accent", "--accent-2", "--accent-3"].map(v => css.getPropertyValue(v).trim());
+    readColors();
     const n = Math.min(90, Math.round((w * h) / 20000));
     nodes = Array.from({ length: n }, (_, i) => ({
       x: Math.random() * w, y: Math.random() * h,
@@ -51,7 +55,7 @@
   }
 
   addEventListener("resize", resize);
-  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", resize);
+  addEventListener("themechange", () => { readColors(); draw(); }); // fired by app.js
   resize();
   if (!still) loop(); // reduced motion: one static frame only
 })();

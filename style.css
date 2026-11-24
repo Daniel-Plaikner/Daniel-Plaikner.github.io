@@ -13,20 +13,19 @@
   --radius: 12px;
   --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f6f5fa;
-    --panel: #eeecf5;
-    --card: #ffffff;
-    --tab: #f2f0f8;
-    --border: #dcd9e8;
-    --text: #1c1a26;
-    --muted: #605c75;
-    --accent: #6b3fd1;
-    --accent-2: #0b62c4;
-    --accent-3: #0f7a5a;
-    --accent-soft: rgba(107, 63, 209, .08);
-  }
+/* data-theme is set in index.html: the visitor's stored choice, else the system setting */
+:root[data-theme="light"] {
+  --bg: #f6f5fa;
+  --panel: #eeecf5;
+  --card: #ffffff;
+  --tab: #f2f0f8;
+  --border: #dcd9e8;
+  --text: #1c1a26;
+  --muted: #605c75;
+  --accent: #6b3fd1;
+  --accent-2: #0b62c4;
+  --accent-3: #0f7a5a;
+  --accent-soft: rgba(107, 63, 209, .08);
 }
 
 * { box-sizing: border-box; }
@@ -59,6 +58,8 @@ p:last-child { margin-bottom: 0; }
 .lang button { font: 500 11.5px var(--mono); padding: 5px 8px; border: 0; background: none; color: var(--muted); cursor: pointer; }
 .lang button:hover { color: var(--text); }
 .lang button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+.theme { flex: none; font-size: 14px; line-height: 1; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: none; color: var(--muted); cursor: pointer; }
+.theme:hover { color: var(--text); }
 
 /* ---------- layout ---------- */
 main { max-width: 960px; margin: 0 auto; padding: 28px 28px 40px; display: flex; flex-direction: column; gap: 22px; }
