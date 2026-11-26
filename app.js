@@ -62,6 +62,8 @@
         <div class="tab"><span class="ic mono">##</span><h2>${t(title)}</h2><span class="path mono">${file}</span></div>
         <div class="body">${body}</div>
       </section>`).join("");
+    const printCv = `cv.html?lang=${LANG}`;
+    if ($("print-cv").getAttribute("src") !== printCv) $("print-cv").src = printCv;
     $("lang").innerHTML = LANGS.map(l => `<button type="button" data-lang="${l}" aria-pressed="${l === LANG}">${l.toUpperCase()}</button>`).join("");
   }
 
